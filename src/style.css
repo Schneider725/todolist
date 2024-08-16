@@ -28,8 +28,10 @@ ol[role='list'] {
 body {
   min-height: 100vh;
   line-height: 1.5;
-  display: grid;
-  grid-auto-flow: column;
+  font-family: 'Times New Roman', Times, serif;
+  color: white;
+  padding: 0;
+  margin: 0;
 }
 
 /* Set shorter line heights on headings and interactive elements */
@@ -73,6 +75,10 @@ textarea:not([rows]) {
 :target {
   scroll-margin-block: 5ex;
 }
+h1 {
+    text-align: center;
+    font-size: xx-large;
+}
 #modal { 
     display : none;
     position: absolute;
@@ -81,6 +87,7 @@ textarea:not([rows]) {
     padding: 1rem;
     cursor: pointer;
     transition: all 0.35s ease-in;
+    background-color: #cbd5e1;
   }
   form > * {
     margin-bottom: 20px;
@@ -91,12 +98,31 @@ form {
 }
 #content {
     text-align: center;
+    color: white;
 }
 #content > *:hover {
-    background-color: greenyellow;
+    background-color: #e2e8f0;
     text-align: center;
+    color:black
 }
 .elem {
     margin-bottom: 30px;
 
+}
+.container {
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-columns: 1fr 2fr;
+    height: 100vh;
+}
+.title{
+    font-size: xx-large;
+    text-align: center;
+    margin-bottom: 20px;
+}
+#left {
+    background-color: #262626;
+}
+#right {
+    background-color: #404040;
 }

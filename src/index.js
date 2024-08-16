@@ -54,6 +54,7 @@ function clearInput() {
     description.value = ''
     dueDate.value = ''
 }
+
 function displayTodo() {
     const content = document.getElementById('content');
     content.innerHTML = ''; // Clear any existing content

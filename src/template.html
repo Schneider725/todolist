@@ -5,33 +5,39 @@
     <title>Todo List</title>
   </head>
   <body>
-    <div id="left">
-        <button id="modalButton">add items</button>
-        <div id="modal">
-            <fieldset>
-                <legend>thing to be done</legend>
-                <form>
-                    <label for="title">title</label>
-                    <input type="text" id="title" name="title">
-                    <label for="description">description</label>
-                    <input type="text" id="description" name="description">
-                    <label for="dueDate">due date<label>
-                    <input type="date" id="dueDate" name="dueDate">
-                    <label for="priority">priority</label>
-                    <select id="priority">
-                        <option value="low">low</option>
-                        <option value="medium">medium</option>
-                        <option value="high">high</option>
-                    </select>
-                </form>
-                <button id="closeButton">close</button>
-                <button id="submitButton">submit</button>
-            </fieldset>
+    <div class="container">
+        <div id="left">
+            <h1>Todo List</h1>
+            <button id="modalButton">add items</button>
+            <div id="modal">
+                <fieldset>
+                    <legend>thing to be done</legend>
+                    <form>
+                        <label for="title">title</label>
+                        <input type="text" id="title" name="title">
+                        <label for="description">description</label>
+                        <input type="text" id="description" name="description">
+                        <label for="dueDate">due date<label>
+                        <input type="date" id="dueDate" name="dueDate">
+                        <label for="priority">priority</label>
+                        <select id="priority">
+                            <option value="low">low</option>
+                            <option value="medium">medium</option>
+                            <option value="high">high</option>
+                        </select>
+                    </form>
+                    <button id="closeButton">close</button>
+                    <button id="submitButton">submit</button>
+                </fieldset>
+            </div>
+        </div>
+        <div id="right">
+            <h1>Tasks</h1>
+            <div id="content"></div>
         </div>
     </div>
-    <div id="right">
-        <div id="content"></div>
-    </div>
-    <script src="bundle.js"></script>
+    <!-- <script src="bundle.js"></script> -->
+    <script src="index.js"></script>
+
   </body>
 </html>
