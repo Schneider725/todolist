@@ -32,6 +32,7 @@ body {
   color: white;
   padding: 0;
   margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 /* Set shorter line heights on headings and interactive elements */
@@ -79,6 +80,12 @@ h1 {
     text-align: center;
     font-size: xx-large;
 }
+:root {
+    --light: #cbd5e1;
+    --medium: #404040;
+    --dark: #262626;
+    --hover: #5b21b6;
+}
 #modal { 
     display : none;
     position: absolute;
@@ -86,11 +93,15 @@ h1 {
     justify-content: center;
     padding: 1rem;
     cursor: pointer;
-    transition: all 0.35s ease-in;
-    background-color: #cbd5e1;
+    border: 2px solid black;
+    background-color: var(--hover);
   }
+  fieldset {
+    border: 0;
+  }
+
   form > * {
-    margin-bottom: 20px;
+    margin-bottom: 10px;
   }
 form {
     display: flex;
@@ -101,9 +112,8 @@ form {
     color: white;
 }
 #content > *:hover {
-    background-color: #e2e8f0;
+    background-color: var(--hover);
     text-align: center;
-    color:black
 }
 .elem {
     margin-bottom: 30px;
@@ -121,8 +131,17 @@ form {
     margin-bottom: 20px;
 }
 #left {
-    background-color: #262626;
+    background-color: var(--dark);
 }
 #right {
-    background-color: #404040;
+    background-color: var(--medium);
+}
+button {
+    background-color: var(--dark);
+    border: none;
+    color: var(--light);
+    font-size: large;
+}
+button:hover {
+    cursor: pointer;
 }
