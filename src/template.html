@@ -13,21 +13,24 @@
                 <fieldset>
                     <legend>Tasks</legend>
                     <form>
-                        <label for="title">title</label>
-                        <input type="text" id="title" name="title">
-                        <label for="description">description</label>
-                        <input type="text" id="description" name="description">
-                        <label for="dueDate">due date<label>
+                        <!-- <label for="title">title</label> -->
+                        <input type="text" id="title" name="title" placeholder="Title">
+                        <!-- <label for="description">description</label> -->
+                        <input type="text" id="description" name="description" placeholder="Description">
+                        <label for="dueDate">Due Date : <label>
                         <input type="date" id="dueDate" name="dueDate">
-                        <label for="priority">priority</label>
+                        <!-- <label for="priority">priority</label> -->
                         <select id="priority">
+                            <option value = "" disabled selected>priority</option>
                             <option value="low">low</option>
                             <option value="medium">medium</option>
                             <option value="high">high</option>
                         </select>
                     </form>
-                    <button id="closeButton">close</button>
-                    <button id="submitButton">submit</button>
+                    <div class="buttons">
+                        <button id="closeButton">close</button>
+                        <button id="submitButton">submit</button>
+                    </div>
                 </fieldset>
             </div>
         </div>

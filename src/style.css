@@ -94,7 +94,17 @@ h1 {
     padding: 1rem;
     cursor: pointer;
     border: 2px solid black;
-    background-color: var(--hover);
+    background-color: var(--dark);
+  }
+  form{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+  }
+  .buttons {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 10px;
   }
   fieldset {
     border: 0;
@@ -144,4 +154,15 @@ button {
 }
 button:hover {
     cursor: pointer;
+}
+
+input {
+  background-color: var(--dark);
+  border: none;
+  color: white;
+}
+
+select {
+  background-color: var(--dark);
+  color: white;
 }
